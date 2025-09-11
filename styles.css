@@ -1,4 +1,6 @@
-body {
-  background-color: #542be3;
+html {
+  background-image: url("src/imgs/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
