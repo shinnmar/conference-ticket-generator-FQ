@@ -2,5 +2,31 @@ html {
   background-image: url("../imgs/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  font-family: "Inconsolata", monospace;
+  font-size: 62.5%;
   color: #ffffff;
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  header {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .logo {
+      width: 200px;
+      height: auto;
+    }
+  }
 }
