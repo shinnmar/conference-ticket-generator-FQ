@@ -13,11 +13,6 @@
   --radius: 1.2rem;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   font-size: 62.5%;
 }
@@ -31,6 +26,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
 
   h1 {
     font-size: 6rem;
@@ -102,6 +98,21 @@ form {
   label {
     border-radius: var(--radius);
   }
+
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: 1px solid #8784A5;
+    margin: 0.7rem 0 0;
+  }
+}
+
+.form-group {
+  padding: 1.3rem 0;
 }
 
 .container {
@@ -129,4 +140,7 @@ header {
   border-radius: var(--radius);
   background-color: var(--color-secondary);
   font-family: var(--font-main);
+  font-size: 1.8rem;
+  color: #000000;
+  font-weight: 700;
 }
