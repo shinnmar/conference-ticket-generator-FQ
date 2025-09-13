@@ -4,11 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conference Ticket Generator 💜</title>
+  <title>Coding Conf</title>
   <link rel="stylesheet" href="./src/css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg" sizes="32x32" href="src/imgs/favicon.svg">
+  <link rel="icon" type="image/svg" sizes="16x16" href="src/imgs/favicon.svg">
 </head>
 <header class="header">
   <img class="logo" src="./src/imgs/logo_CodingConf.svg" alt="Coding Conf Logo">
@@ -16,10 +18,34 @@
 
 <body>
   <main>
-    <section>
+    <section class="main-section">
       <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
       <p>Secure your spot at next year’s biggest coding conference.</p>
 
+      <form action="" id="ticketForm">
+
+        <div class="form-group">
+          <label for="avatar">Upload Avatar</label>
+          <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+          <small>Upload your photo (PNG or JPG, max size 2MB)</small>
+        </div>
+
+        <div class="form-group">
+          <label for="fullName">Full Name</label>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email" placeholder="example@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="github">GitHub Username</label>
+          <input type="text" name="github" id="github" placeholder="@yourusername" required>
+        </div>
+
+        <button type="submit" class="btn">Generate My Ticket</button>
+      </form>
 
     </section>
   </main>
