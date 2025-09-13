@@ -22,28 +22,37 @@
       <div class="container">
         <h1 class="title">Your Journey to Coding Conf 2025 Starts Here!</h1>
         <p class="subtitle">Secure your spot at next year’s biggest coding conference.</p>
-        
+
         <form id="ticketForm">
           <div class="form-group">
             <label for="avatar">Upload Avatar</label>
-            <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+            
+            <div class="upload-box" id="upload-box">
+              <input type="file" name="avatar" id="avatar" accept="image/png, image/jpeg">
+              
+              <div class="upload-content">
+                <img class="upload-icon" src="src/imgs/icon_upload.svg" alt="Icon upload">
+                <span>Drag and drop or click to upload</span>
+              </div>
+            </div>
+
             <small>Upload your photo (PNG or JPG, max size 2MB)</small>
           </div>
-        
+
           <div class="form-group">
             <label for="fullName">Full Name</label>
           </div>
-        
+
           <div class="form-group">
             <label for="email">Email Address</label>
             <input type="email" name="email" id="email" placeholder="example@email.com" required>
           </div>
-        
+
           <div class="form-group">
             <label for="github">GitHub Username</label>
             <input type="text" name="github" id="github" placeholder="@yourusername" required>
           </div>
-        
+
           <button type="submit" class="btn">Generate My Ticket</button>
         </form>
       </div>
