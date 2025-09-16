@@ -1,36 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//👩🏽‍💻 Happy Programmers' Day 🎉
-const gdgCallao = "💙 GDG Callao 💙";
-
-function celebrate() {
-  console.log(
-    `¡Hola, Comunidad! Hoy celebramos el talento 
-    y la pasión por el código.
-    ¡Feliz Día, Programadores :)!`
-  );
-  console.log(
-    `Gracias por ser parte 
-     de ${gdgCallao}`);
-}
-
-celebrate();
-
-
-
-
 const uploadBox = document.getElementById("upload-box");
 const fileInput = document.getElementById("avatar");
 
