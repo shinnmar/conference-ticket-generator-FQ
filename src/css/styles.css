@@ -17,6 +17,33 @@ html {
   font-size: 62.5%;
 }
 
+.pattern {
+  width: 100%;
+  z-index: -1;
+}
+
+.left {
+  left: 3%;
+  top: -13%;
+  opacity: 50%;
+}
+
+.right {
+  top: 50%;
+  right: -62%;
+  opacity: 80%;
+}
+
+.left,
+.right,
+.pattern {
+  position: absolute;
+}
+
+.fullName {
+  position: relative;
+}
+
 body {
   background-image: url("../imgs/background.jpg");
   background-repeat: no-repeat;
@@ -27,6 +54,7 @@ body {
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
 
   h1 {
     font-size: 6rem;
@@ -106,7 +134,7 @@ form {
     border: none;
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
-    border: 1px solid #8784A5;
+    border: 1px solid #8784a5;
     margin: 0.7rem 0 0;
   }
 }
